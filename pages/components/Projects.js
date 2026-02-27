@@ -15,7 +15,7 @@ export default function Projects() {
       description: "Mobile-friendly site featuring menu display, hours, location, and contact form.",
       thumbnail: "/mex.png",
       tech: ["Next.js", "React", "Tailwind CSS"],
-      link: "https://restaurant-demo.netlify.app",
+      link: "https://rosa-kitchen.netlify.app/",
       github: "https://github.com/yourusername/restaurant-template"
     },
     {
