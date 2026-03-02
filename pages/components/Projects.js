@@ -34,18 +34,18 @@ export default function Projects() {
 
         {/* Section Header */}
         <div className="text-center mb-14">
-          <p className="text-xs font-semibold tracking-widest text-gray-600 dark:text-slate-400 uppercase mb-3">
+          <p className="text-xs font-semibold tracking-widest text-gray-600  uppercase mb-3">
             Portfolio
           </p>
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900  mb-4">
             My Work
           </h2>
           <div className="flex items-center justify-center gap-3">
-            <div className="h-px w-8 bg-gray-500/40 dark:bg-slate-500/40"></div>
-            <p className="text-base text-gray-600 dark:text-slate-400">
+            <div className="h-px w-8 bg-gray-500/40 "></div>
+            <p className="text-base text-gray-600 ">
               Recent projects I&apos;ve built
             </p>
-            <div className="h-px w-8 bg-gray-500/40 dark:bg-slate-500/40"></div>
+            <div className="h-px w-8 bg-gray-500/40 "></div>
           </div>
         </div>
 
@@ -62,7 +62,7 @@ export default function Projects() {
 
 function ProjectCard({ project }) {
   return (
-    <div className="bg-white/20 dark:bg-slate-900/45 backdrop-blur-md border border-white/40 dark:border-white/10 rounded-xl overflow-hidden hover:bg-white/30 dark:hover:bg-slate-900/60 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+    <div className="bg-white/20  backdrop-blur-md border border-white/40  rounded-xl overflow-hidden hover:bg-white/30  transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
 
       {/* Project Screenshot with Hover Overlay */}
       <div className="relative h-48 overflow-hidden group">
@@ -75,7 +75,7 @@ function ProjectCard({ project }) {
         />
 
         {/* Hover Overlay - Desktop only */}
-        <div className="hidden lg:flex absolute inset-0 bg-linear-to-br from-blue-500/60 to-orange-400/60 dark:from-indigo-800/70 dark:to-purple-900/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 items-center justify-center gap-3 backdrop-blur-[2px]">
+        <div className="hidden lg:flex absolute inset-0 bg-linear-to-br from-blue-500/60 to-orange-400/60  opacity-0 group-hover:opacity-100 transition-opacity duration-300 items-center justify-center gap-3 backdrop-blur-[2px]">
           <a
             href={project.link}
             target="_blank"
@@ -97,11 +97,11 @@ function ProjectCard({ project }) {
 
       {/* Card Content */}
       <div className="p-5">
-        <h3 className="text-lg font-bold text-gray-900 dark:text-slate-100 mb-2">
+        <h3 className="text-lg font-bold text-gray-900  mb-2">
           {project.title}
         </h3>
 
-        <p className="text-gray-600 dark:text-slate-400 mb-4 text-sm leading-relaxed">
+        <p className="text-gray-600 mb-4 text-sm leading-relaxed">
           {project.description}
         </p>
 
@@ -110,7 +110,7 @@ function ProjectCard({ project }) {
           {project.tech.map((tech, i) => (
             <span
               key={i}
-              className="px-2.5 py-1 bg-white/30 dark:bg-white/10 border border-white/50 dark:border-white/15 rounded-full text-xs font-medium text-gray-800 dark:text-slate-300"
+              className="px-2.5 py-1 bg-white/30  border-white/50 unded-full text-xs font-medium text-gray-800 "
             >
               {tech}
             </span>
@@ -131,7 +131,7 @@ function ProjectCard({ project }) {
             href={project.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-2 bg-white/30 border border-white/50 text-gray-800 dark:text-slate-200 text-sm font-semibold rounded-lg hover:bg-white/45 transition"
+            className="px-4 py-2 bg-white/30 border border-white/50 text-gray-800  text-sm font-semibold rounded-lg hover:bg-white/45 transition"
           >
             Code
           </a>

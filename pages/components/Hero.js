@@ -11,32 +11,32 @@ export default function Hero() {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-400"></span>
           </span>
-          <span className="text-xs font-semibold tracking-widest text-gray-800 dark:text-slate-100 uppercase">
+          <span className="text-xs font-semibold tracking-widest text-gray-800  uppercase">
             Available for Hire
           </span>
         </div>
 
         {/* Main Headline */}
         <div className="hero-headline">
-          <p className="text-lg font-semibold tracking-widest text-gray-600 dark:text-slate-400 uppercase mb-3">
+          <p className="text-lg font-semibold tracking-widest text-gray-600  uppercase mb-3">
             Hi, I'm
           </p>
-          <h1 className="text-5xl lg:text-7xl font-bold leading-[0.92] tracking-tight text-gray-900 dark:text-white">
+          <h1 className="text-5xl lg:text-7xl font-bold leading-[0.92] tracking-tight text-gray-900 ">
             Kenny<br />
             <span className="text-primary">Chavarriaga</span>
           </h1>
           <div className="flex items-center gap-3 mt-4 justify-center lg:justify-start">
-            <p className="text-lg lg:text-xl font-semibold text-gray-700 dark:text-slate-300">
+            <p className="text-lg lg:text-xl font-semibold text-gray-700 ">
               Frontend Developer
             </p>
           </div>
-          <p className="text-sm text-gray-500 dark:text-slate-500 mt-1.5 tracking-wide">
+          <p className="text-sm text-gray-600  mt-1.5 tracking-wide">
             Pawtucket, Rhode Island
           </p>
         </div>
 
         {/* Bio */}
-        <p className="hero-bio text-base lg:text-lg text-gray-700 dark:text-slate-300 leading-relaxed max-w-sm lg:max-w-none">
+        <p className="hero-bio text-base lg:text-lg text-gray-700  leading-relaxed max-w-sm lg:max-w-none">
           I build fast, responsive websites and web apps with clean code and great user
           experiences. Focused on React & Next.js — from design to deployed product.
         </p>
@@ -46,7 +46,7 @@ export default function Hero() {
           {["React", "Next.js", "JavaScript", "Tailwind CSS", "Node.js"].map((tech) => (
             <span
               key={tech}
-              className="px-3 py-1.5 bg-white/25 backdrop-blur-sm border border-white/45 rounded-full text-xs font-semibold text-gray-800 dark:text-slate-200 hover:bg-white/40 transition-colors cursor-default"
+              className="px-3 py-1.5 bg-white/25 backdrop-blur-sm border border-white/45 rounded-full text-xs font-semibold text-gray-800  hover:bg-white/40 transition-colors cursor-default"
             >
               {tech}
             </span>
@@ -63,7 +63,7 @@ export default function Hero() {
           </button>
           <button
             onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
-            className="px-7 py-3.5 bg-white/25 backdrop-blur-sm border border-white/50 text-gray-900 dark:text-white font-semibold rounded-xl hover:bg-white/40 active:scale-95 transition-all"
+            className="px-7 py-3.5 bg-white/25 backdrop-blur-sm border border-white/50 text-gray-900  font-semibold rounded-xl hover:bg-white/40 active:scale-95 transition-all"
           >
             Contact Me
           </button>
