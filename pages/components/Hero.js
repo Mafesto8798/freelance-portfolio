@@ -1,20 +1,86 @@
-
-
 export default function Hero() {
   return (
-            <div className="w-full flex flex-col items-center justify-center gap-8 px-4 py-8 lg:p-24 bg-slate-300 dark:bg-slate-900 rounded-t-xl">
-                <h1 className="text-2xl lg:text-4xl font-bold text-gray-900 dark:text-slate-300 text-center">
-                    Hi, I'm <strong className="text-primary font-bold">Kenny Chavarriaga</strong>! A Web Developer in Pawtucket, Rhode Island
-                </h1>
-                <p className="text-2xl text-gray-800 dark:text-gray-300 py-12 w-7/8 lg:w-5/8 text-center leading-relaxed">
-                    I build fast, mobile-friendly websites that help local businesses grow. With a focus on clean design and seamless user experience, I create custom solutions that drive results. Let's work together to bring your vision to life!
-                </p>
-                <span className="flex flex-col lg:flex-row justify-center gap-6">
-                <img src="/comp.png" alt="computer" height={200} width={100} className="pt-12"/>
-                </span>
-                <button className="bg-primary hover:bg-blue-700 text-white font-bold  py-2 px-4 rounded" onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}>
-                    Contact Me
-                </button>
-            </div>
+    <div className="w-full flex flex-col lg:flex-row items-center justify-between gap-12 px-4 pt-12 pb-20 lg:pt-16 lg:pb-28">
+
+      {/* Left: Text Content */}
+      <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-6 w-full lg:max-w-xl">
+
+        {/* Available Badge */}
+        <div className="hero-badge inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/20 backdrop-blur-md border border-white/40 shadow-sm">
+          <span className="relative flex h-2.5 w-2.5">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-400"></span>
+          </span>
+          <span className="text-xs font-semibold tracking-widest text-gray-800 dark:text-slate-100 uppercase">
+            Available for Hire
+          </span>
+        </div>
+
+        {/* Main Headline */}
+        <div className="hero-headline">
+          <p className="text-lg font-semibold tracking-widest text-gray-600 dark:text-slate-400 uppercase mb-3">
+            Hi, I'm
+          </p>
+          <h1 className="text-5xl lg:text-7xl font-bold leading-[0.92] tracking-tight text-gray-900 dark:text-white">
+            Kenny<br />
+            <span className="text-primary">Chavarriaga</span>
+          </h1>
+          <div className="flex items-center gap-3 mt-4 justify-center lg:justify-start">
+            <p className="text-lg lg:text-xl font-semibold text-gray-700 dark:text-slate-300">
+              Frontend Developer
+            </p>
+          </div>
+          <p className="text-sm text-gray-500 dark:text-slate-500 mt-1.5 tracking-wide">
+            Pawtucket, Rhode Island
+          </p>
+        </div>
+
+        {/* Bio */}
+        <p className="hero-bio text-base lg:text-lg text-gray-700 dark:text-slate-300 leading-relaxed max-w-sm lg:max-w-none">
+          I build fast, responsive websites and web apps with clean code and great user
+          experiences. Focused on React & Next.js — from design to deployed product.
+        </p>
+
+        {/* Tech Stack */}
+        <div className="hero-stack flex flex-wrap gap-2 justify-center lg:justify-start">
+          {["React", "Next.js", "JavaScript", "Tailwind CSS", "Node.js"].map((tech) => (
+            <span
+              key={tech}
+              className="px-3 py-1.5 bg-white/25 backdrop-blur-sm border border-white/45 rounded-full text-xs font-semibold text-gray-800 dark:text-slate-200 hover:bg-white/40 transition-colors cursor-default"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
+
+        {/* CTAs */}
+        <div className="hero-ctas flex gap-3 flex-wrap justify-center lg:justify-start">
+          <button
+            onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })}
+            className="px-7 py-3.5 bg-primary text-white font-semibold rounded-xl hover:bg-blue-700 active:scale-95 transition-all shadow-lg hover:shadow-xl"
+          >
+            View My Work
+          </button>
+          <button
+            onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
+            className="px-7 py-3.5 bg-white/25 backdrop-blur-sm border border-white/50 text-gray-900 dark:text-white font-semibold rounded-xl hover:bg-white/40 active:scale-95 transition-all"
+          >
+            Contact Me
+          </button>
+        </div>
+      </div>
+
+      {/* Right: Computer Icon */}
+      <div className="hero-icon shrink-0 flex items-center justify-center lg:pr-4">
+        <img
+          src="/comp.png"
+          alt="computer"
+          width={220}
+          height={220}
+          className="animate-float w-40 lg:w-56"
+        />
+      </div>
+
+    </div>
   );
 }

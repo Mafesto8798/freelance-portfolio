@@ -1,36 +1,62 @@
-
-
 export default function Contact() {
   return (
-    <section id="contact" className="w-full bg-slate-200 dark:bg-slate-700 py-24 px-6 flex items-center">
-      <div className="max-w-7xl mx-auto text-center">
-        
-        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-slate-300 mb-4">
-          Let's Work Together
-        </h2>
-        
-        <p className="text-lg text-gray-700 dark:text-slate-400 mb-8">
-          Looking to improve your website or start a new project? 
-          I'd love to hear from you.
-        </p>
+    <section id="contact" className="w-full py-24 px-6">
+      <div className="max-w-2xl mx-auto">
 
-        {/* Email Button */}
-        <a 
-          href="mailto:kenny.chavarriaga@gmail.com"
-          target="_blank"
-          className="inline-block px-8 py-4 bg-primary text-white text-lg font-medium rounded-lg hover:bg-blue-700 transition shadow-lg hover:shadow-xl"
-        >
-          Get In Touch
-        </a>
+        {/* Glass Card */}
+        <div className="bg-white/20 dark:bg-slate-900/45 backdrop-blur-md border border-white/40 dark:border-white/10 rounded-2xl p-10 lg:p-14 text-center">
 
-        {/* Optional: Social Links */}
-        <div className="mt-8 flex justify-center gap-12">
-          <a href="https://github.com/mafesto8798" className="text-gray-600 dark:text-slate-400 hover:text-blue-600" target="_blank">
-            GitHub
+          <p className="text-xs font-semibold tracking-widest text-gray-600 dark:text-slate-400 uppercase mb-4">
+            Get In Touch
+          </p>
+
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+            Let&apos;s Work Together
+          </h2>
+
+          <p className="text-base lg:text-lg text-gray-700 dark:text-slate-300 mb-10 leading-relaxed">
+            Looking to hire a frontend developer or start a new web project?
+            <br className="hidden lg:block" />
+            I&apos;d love to hear from you.
+          </p>
+
+          {/* Email Button */}
+          <a
+            href="mailto:kenny.chavarriaga@gmail.com"
+            className="inline-block px-10 py-4 bg-primary text-white text-base font-semibold rounded-xl hover:bg-blue-700 active:scale-95 transition-all shadow-lg hover:shadow-xl mb-10"
+          >
+            Get In Touch
           </a>
-          <a href="https://www.linkedin.com/in/kenny-chavarriaga-805b68159/" className="text-gray-600 dark:text-slate-400 hover:text-blue-600 " target="_blank">
-            LinkedIn
-          </a>
+
+          {/* Divider */}
+          <div className="flex items-center gap-4 mb-8">
+            <div className="flex-1 h-px bg-white/30 dark:bg-white/10"></div>
+            <span className="text-xs text-gray-600 dark:text-slate-500 uppercase tracking-wider">
+              or find me on
+            </span>
+            <div className="flex-1 h-px bg-white/30 dark:bg-white/10"></div>
+          </div>
+
+          {/* Social Links */}
+          <div className="flex justify-center gap-4">
+            <a
+              href="https://github.com/mafesto8798"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-2.5 bg-white/25 backdrop-blur-sm border border-white/40 text-gray-800 dark:text-slate-200 text-sm font-semibold rounded-xl hover:bg-white/40 active:scale-95 transition-all"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/kenny-chavarriaga-805b68159/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-2.5 bg-white/25 backdrop-blur-sm border border-white/40 text-gray-800 dark:text-slate-200 text-sm font-semibold rounded-xl hover:bg-white/40 active:scale-95 transition-all"
+            >
+              LinkedIn
+            </a>
+          </div>
+
         </div>
       </div>
     </section>
