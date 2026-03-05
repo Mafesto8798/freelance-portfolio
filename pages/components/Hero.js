@@ -43,7 +43,7 @@ export default function Hero() {
 
         {/* Tech Stack */}
         <div className="hero-stack flex flex-wrap gap-2 justify-center lg:justify-start">
-          {["React", "Next.js", "JavaScript", "Tailwind CSS", "Node.js"].map((tech) => (
+          {["React", "Next.js", "JavaScript", "Tailwind CSS","Claude"].map((tech) => (
             <span
               key={tech}
               className="px-3 py-1.5 bg-white/25 backdrop-blur-sm border border-white/45 rounded-full text-xs font-semibold text-gray-800  hover:bg-white/40 transition-colors cursor-default"
