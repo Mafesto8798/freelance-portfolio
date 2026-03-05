@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Projects() {
   const projects = [
     {
-      title: "Music Theory Learning App",
+      title: "Music Theory Key Explorer",
       description: "Interactive tool for musicians to learn scales and write/save chord progressions.",
       thumbnail: "/music.png",
       tech: ["Next.js", "React", "Local Storage"],
@@ -12,24 +12,16 @@ export default function Projects() {
     },
     {
       title: "Rosa's Kitchen",
-      description: "Mobile-friendly site featuring information, menu items, hours, location and contact.",
+      description: "Mobile-friendly site featuring navigation, business information, menu, hours, location and contact.",
       thumbnail: "/mex.png",
       tech: ["Next.js", "React", "Tailwind CSS"],
       link: "https://rosa-kitchen.netlify.app/",
       github: "https://github.com/yourusername/restaurant-template"
-    },
-    {
-      title: "Plant Nursery",
-      description: "Landing page for a yoga studio with class schedules, instructor bios, and contact info.",
-      thumbnail: "/plant.jpg",
-      tech: ["Next.js", "Tailwind CSS"],
-      link: "https://yoga-demo.netlify.app",
-      github: "https://github.com/yourusername/yoga-template"
     }
   ]
 
   return (
-    <section id="projects" className="w-full py-24 px-6">
+    <section id="projects" className="w-full py-24 px-2 lg:px-6">
       <div className="max-w-8xl mx-auto">
 
         {/* Section Header */}
@@ -50,7 +42,7 @@ export default function Projects() {
         </div>
 
         {/* Project Cards Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="lg:w-3/4 mx-auto grid md:grid-cols-2 lg:grid-cols-2 gap-6">
           {projects.map((project, index) => (
             <ProjectCard key={index} project={project} />
           ))}

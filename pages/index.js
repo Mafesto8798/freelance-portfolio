@@ -20,7 +20,7 @@ export default function Home() {
     <div
       className={`${geistSans.className} ${geistMono.className} flex min-h-screen items-center justify-center bg-linear-to-b  from-blue-400 via-indigo-300 to-orange-300 font-sans `}
     >
-      <main className="flex min-h-screen w-full lg:max-w-3/4 flex-col items-center justify-between py-24 lg:py-24 px-8 lg:px-8   sm:items-start">
+      <main className="flex min-h-screen w-full lg:max-w-3/4 flex-col items-center justify-between py-12 lg:py-24 px-8 lg:px-8  sm:items-start">
         <Hero />
         <Projects />
         <Contact />

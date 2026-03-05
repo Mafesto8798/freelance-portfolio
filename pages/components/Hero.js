@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <div className="w-full flex flex-col lg:flex-row items-center justify-between gap-12 px-4 pt-12 pb-20 lg:pt-16 lg:pb-28">
+    <div className="w-full flex flex-col lg:flex-row items-center justify-between gap-12 px-4 pt-2 pb-20 lg:pt-16 lg:pb-28">
 
       {/* Left: Text Content */}
       <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-6 w-full lg:max-w-xl">
@@ -77,7 +77,7 @@ export default function Hero() {
           alt="computer"
           width={220}
           height={220}
-          className="animate-float w-40 lg:w-56"
+          className="animate-float w-32 lg:w-56"
         />
       </div>
 

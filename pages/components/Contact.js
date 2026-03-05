@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
-    <section id="contact" className="w-full py-24 px-6">
-      <div className="max-w-2xl mx-auto">
+    <section id="contact" className="w-full py-24 px-2 lg:px-6">
+      <div className="w-full mx-auto">
 
         {/* Glass Card */}
         <div className="bg-white/20  backdrop-blur-md border border-white/40 rounded-2xl p-10 lg:p-14 text-center">
