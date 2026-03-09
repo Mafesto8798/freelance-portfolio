@@ -38,7 +38,7 @@ export default function Hero() {
         {/* Bio */}
         <p className="hero-bio text-base lg:text-lg text-gray-700  leading-relaxed max-w-sm lg:max-w-none">
           I build fast, responsive websites and web apps with clean code and great user
-          experiences. Focused on React & Next.js — from design to deployed product.
+          experiences. Focused on React & Next.js from design to deployed product.
         </p>
 
         {/* Tech Stack */}
