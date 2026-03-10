@@ -17,7 +17,15 @@ export default function Projects() {
       tech: ["Next.js", "React", "Tailwind CSS"],
       link: "https://rosa-kitchen.netlify.app/",
       github: "https://github.com/yourusername/restaurant-template"
-    }
+    },
+    {
+      title: "Fitness Tracker",
+      description: "Full stack fitness tracker with user authentication, workout logging, and progress visualization.",
+      thumbnail: "/fitness.png",
+      tech: ["Next.js", "Firebase", "Claude","OAuth"],
+      link: "https://myfitnesslog.netlify.app//",
+      github: "https://github.com/Mafesto8798/fitness-tracker"
+    },
   ]
 
   return (
@@ -42,7 +50,7 @@ export default function Projects() {
         </div>
 
         {/* Project Cards Grid */}
-        <div className="lg:w-3/4 mx-auto grid md:grid-cols-2 lg:grid-cols-2 gap-6">
+        <div className="lg:w-full mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
             <ProjectCard key={index} project={project} />
           ))}
