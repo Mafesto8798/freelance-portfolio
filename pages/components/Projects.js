@@ -23,7 +23,7 @@ export default function Projects() {
       description: "Full stack fitness tracker with user authentication, workout logging, and progress visualization.",
       thumbnail: "/fitness.png",
       tech: ["Next.js", "Firebase", "Claude","OAuth"],
-      link: "https://myfitnesslog.netlify.app//",
+      link: "https://myfitnesslog.netlify.app/",
       github: "https://github.com/Mafesto8798/fitness-tracker"
     },
   ]
