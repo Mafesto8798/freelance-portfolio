@@ -36,6 +36,14 @@ export default function Footer() {
           >
             LinkedIn
           </a>
+             <a
+            href="https://docs.google.com/document/d/1irGcJLTrDXVAkazeWrflUvYxXbvzvgGX/edit?usp=sharing&ouid=112014708772403031294&rtpof=true&sd=true"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-2.5 bg-white/25 backdrop-blur-sm border border-white/40 text-gray-800  text-sm font-semibold rounded-xl hover:bg-white/40 active:scale-95 transition-all"
+          >
+            Resume
+          </a>
         </div>
 
       </div>
